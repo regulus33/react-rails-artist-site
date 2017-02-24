@@ -1,25 +1,25 @@
-class Api::V1::ItemsController < Api::V1::BaseController
+class Api::V1::ProjectsController < Api::V1::BaseController
   def index
-    respond_with Item.all
+    respond_with Project.all
   end
 
   def create
-    respond_with :api, :v1, Item.create(item_params)
+    respond_with :api, :v1, Project.create(project_params)
   end
 
   def destroy
-    respond_with Item.destroy(params[:id])
+    respond_with Project.destroy(params[:id])
   end
 
   def update
-    item = Item.find(params["id"])
-    item.update_attributes(item_params)
-    respond_with item, json: item
+    project = Project.find(params["id"])
+    project.update_attributes(project_params)
+    respond_with project, json: project
   end
 
   private
 
-  def item_params
-    params.require(:item).permit(:id, :name, :description)
+  def project_params
+    params.require(:project).permit(:id, :title, :description, :url)
   end
 end
