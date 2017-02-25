@@ -2,9 +2,10 @@ var Body = React.createClass({
     render() {
         return (
             <div>
-              
-                <AllProjects />
+               <AllProjects />
             </div>
         )
     }
 });
+
+
