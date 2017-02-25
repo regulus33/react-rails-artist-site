@@ -12,10 +12,10 @@ var AllProjects = React.createClass({
 		debugger
 	  var projects = this.state.projects.map((project) => {
 		return (
-			<div key={project.id}>
+			<div className="col-md-3" key={project.id}>
 			  <h3>{project.title}</h3>
 			  <p>{project.description}</p>
-			  <img src={project.url}/>
+			  <img className="img-responsive" src={project.url}/>
 			</div>
 		)
 	});
