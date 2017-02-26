@@ -32,6 +32,8 @@ gem 'responders'
 
 gem 'react-rails'
 
+gem "uikit-sass-rails"
+
   gem 'react-bootstrap-rails'
 
 # Use Redis adapter to run Action Cable in production
