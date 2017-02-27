@@ -3,7 +3,8 @@ var Body = React.createClass({
         return (
           <div className="container">
             <div className="row">
-               <AllProjects />
+               <App/>
+
             </div>
           </div>
         )
