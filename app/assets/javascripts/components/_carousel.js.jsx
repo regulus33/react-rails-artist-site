@@ -1,8 +1,9 @@
+
 var Carousel = React.createClass({
 	propTypes: {
-		images: React.PropTypes.arrayOf([
+		images: React.PropTypes.arrayOf(
 			React.PropTypes.string
-		]).isRequired,
+		).isRequired,
 		showThumbnails: React.PropTypes.bool,
 		slideshowActive: React.PropTypes.bool,
 		slideshowDelay: React.PropTypes.number

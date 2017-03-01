@@ -13,3 +13,7 @@ module EzeWebsite
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+EzeWebsite::Application.configure do
+  config.react.addons = true # defaults to false
+end
