@@ -1,4 +1,12 @@
 var Main = React.createClass({
+    
+	componentDidMount() {
+		carousel();
+	},
+
+
+
+
     render() {
         return (
             <div>
@@ -8,3 +16,6 @@ var Main = React.createClass({
         )
     }
 });
+
+
+

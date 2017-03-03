@@ -9,21 +9,20 @@ var AllProjects = React.createClass({
 	},
 
 	render(){
-	  var projects = this.state.projects.map((project) => {
-		return (
-			<div className="col-md-3" key={project.id}>
-			  <h3>{project.title}</h3>
-			  <p>{project.description}</p>
-			  <img className="img-responsive" src={project.url}/>
+		return( 
+		  <div className="container">
+		    <div className="slider">
+		      <ul>
+				 {this.state.projects.map(function(project){
+		            return <li className="" key={project.id}><img className="img-responsive" src={project.url}/></li>;
+		          })}
+				</ul>
+				  <button className="prev">prev</button>
+  				  <button className="next">next</button>
 			</div>
+		  </div>
 		)
-	});
-
-		return(
-	        <div>
-	            {projects}
-	        </div>
-	    )
 
 	}
 });
+

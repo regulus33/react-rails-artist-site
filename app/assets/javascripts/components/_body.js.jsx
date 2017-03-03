@@ -4,7 +4,6 @@ var Body = React.createClass({
           <div className="container">
             <div className="row">
                <App/>
-
             </div>
           </div>
         )

@@ -7,9 +7,7 @@ var carouselImages = [
 var App = React.createClass({
 	render: function () {
 		return (
-			<div className="main">
-				<Carousel images={carouselImages} />
-			</div>
+				<AllProjects/>
 		);
 	}
 });
