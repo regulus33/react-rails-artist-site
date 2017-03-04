@@ -29,10 +29,14 @@ function carousel() {
 
 	function slide(new_slide_index) {
 
+		if(new_slide_index < 0 || new_slide_index >= slide_count) return; 
+
 		var margin_left_pc = (new_slide_index * (-100)) + "%";
+
 		ul.animate({"margin-left": margin_left_pc}, 400, function() {
-	    console.log("ran")
-			slide_index = new_slide_index
+
+		  slide_index = new_slide_index
+
 
 		});
 

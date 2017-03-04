@@ -14,83 +14,77 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap-sprockets";
-@import "bootstrap";
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
 
-.slider {
-width: 100%;
-overflow: hidden;
-height: 300px;
-position: relative;
-}
+ .slider {
+ 	width: 75%;
+ 	overflow: hidden;
+ 	height: 700px;
+ 	position: relative;
+ }
 
-.slider ul {
-margin: 0;
-padding: 0;
-list-style: none;
-position: absolute;
-width: 300%;
-height: 100%;
-top: 0;
-}
+ .slider ul {
+ 	list-style: none;
+ 	position: absolute;
+ 	width: 400%;
+ 	height: 100%;
+ }
 
-.slider li {
-padding: 0;
-margin: 0;
-width: 33.333333%;
-height: 100%;
-overflow: hidden;
-position: absolute;
-top: 0;
-bottom: 0;
-}
+ .slider li {
+ 	overflow: hidden;
+ 	position: absolute;
 
-.slider li img {
-border: none;
-width: 100%;
-min-height: 100%;
-}
+ }
+
+ .slider li img {
+ 	border: none;
+ }
 
 
-body {
-	background-color: red;
-}
+ body {
+ 	
+ }
 
-.container {
-  margin: 0 auto;
-  width: 80%;
-  background-color: #fff;
-  min-height: 400px;
-}
+ .container {
+ 	width: 80%;
+ }
 
 
-.slider button{
-	position: absolute;
-	display: block;
-	box-sizing: border-box;
-	border: none;
-	outline: none;
-	top: 0;
-	bottom: 0;
-	width: 20%;
-	background-color: rgba(0, 0, 0, 0.3);
-	color: #fff;
-	margin: 0;
-	padding: 0;
-	text-align:center;
-	opacity: 0;
-	z-index: 2;
-}
+ .slider button{
+ 	position: relative;
+ 	max-height: 75px;
+ 	/* height: auto;*/
+    margin: 0 auto;
+ 	/*display: block;*/
+ 	/*box-sizing: border-box;*/
+ 	border: none;
+ 	outline: none;
+ 	top: 0;
+ 	bottom: 0;
+ 	width: 20%;
+ 	background-color: rgba(0, 0, 0, 0.3);
+ 	color: #fff;
+ 	margin: 0;
+ 	padding: 0;
+ 	text-align:center;
+ 	opacity: 0.5;
+ 	z-index: 2;
+ }
 
 
-.slider button.prev {
-left: 0;
-}
+ .slider button.prev {
+ 	left: 0;
+ }
 
-.slider button.next {
-right: 0;
-}
+ .slider button.next {
+ 	right: 0;
+ }
 
-.slider button:hover, .slider button:active {
-opacity: 1.0;
-}
+ .slider button:hover, .slider button:active {
+ 	opacity: 1.0;
+ }
+
+ .slider button p {
+ 	font-size: 43px;
+ }
