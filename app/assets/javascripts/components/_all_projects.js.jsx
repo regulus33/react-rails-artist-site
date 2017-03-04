@@ -7,6 +7,9 @@ var AllProjects = React.createClass({
 	componentDidMount() {
 		$.getJSON('/api/v1/projects.json', (response) => {this.setState({ projects: response }) });
 	},
+	componentDidUpdate(prevProps, prevState) {
+        carousel();
+	},
 
 	render(){
 		return( 

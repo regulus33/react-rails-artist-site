@@ -1,12 +1,7 @@
 var Main = React.createClass({
-    
-	componentDidMount() {
-		carousel();
+	componentDidUpdate(prevProps, prevState) {
+        carousel();
 	},
-
-
-
-
     render() {
         return (
             <div>
