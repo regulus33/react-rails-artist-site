@@ -17,74 +17,25 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
- .slider {
- 	width: 75%;
- 	overflow: hidden;
- 	height: 700px;
- 	position: relative;
- }
+/*sets the margin space required on the left and right sides of the carousel*/
+#myCarousel{
+	width: 45%;
+}
 
- .slider ul {
- 	list-style: none;
- 	position: absolute;
- 	width: 400%;
- 	height: 100%;
- }
+	/*Set the top edge of the absolute positioned  
+	element to 80px below the top edge of its nearest positioned ancestor:*/
+.carousel-control {
+	top: 50%;
+}
+.carousel-inner {
+/*	width: 86px;
+	height: 520px;*/
+}
+.carousel-control.left, .carousel-control.right {
+	background: none;
+	color: red;
+	border: none;
+}
+.carousel-control.left {margin-left: -45px; color: black;}
 
- .slider li {
- 	overflow: hidden;
- 	position: absolute;
-
- }
-
- .slider li img {
- 	border: none;
- }
-
-
- body {
- 	
- }
-
- .container {
- 	width: 80%;
- }
-
-
- .slider button{
- 	position: relative;
- 	max-height: 75px;
- 	/* height: auto;*/
-    margin: 0 auto;
- 	/*display: block;*/
- 	/*box-sizing: border-box;*/
- 	border: none;
- 	outline: none;
- 	top: 0;
- 	bottom: 0;
- 	width: 20%;
- 	background-color: rgba(0, 0, 0, 0.3);
- 	color: #fff;
- 	margin: 0;
- 	padding: 0;
- 	text-align:center;
- 	opacity: 0.5;
- 	z-index: 2;
- }
-
-
- .slider button.prev {
- 	left: 0;
- }
-
- .slider button.next {
- 	right: 0;
- }
-
- .slider button:hover, .slider button:active {
- 	opacity: 1.0;
- }
-
- .slider button p {
- 	font-size: 43px;
- }
+.carousel-control.right {margin-right: -45px; color: black;}

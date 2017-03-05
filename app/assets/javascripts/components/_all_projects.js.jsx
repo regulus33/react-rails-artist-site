@@ -8,31 +8,32 @@ var AllProjects = React.createClass({
 		$.getJSON('/api/v1/projects.json', (response) => {this.setState({ projects: response }) });
 	},
 	componentDidUpdate(prevProps, prevState) {
-        carousel();
+       
 	},
 
 	render(){
 		return( 
 	<div id="myCarousel" className="carousel slide"> 
-				<div className="carousel-inner">
-					<div className="active item">
-						<img src="https://pixabay.com/static/uploads/photo/2015/10/01/21/39/background-image-967820_960_720.jpg" />
-					</div> 
-
-				  {this.state.projects.map(function(project){
-		            return(
-		            	<div key={project.id} className="item">
+		<div className="carousel-inner">
+				{this.state.projects.map(function(project){
+				  if(project.id === 1){
+				  	return(
+						<div key={project.id} className="active item img-responsive">
 							<img src={project.url} alt="" />
 						</div> 
 					)
-		          })}
-				
-				<a className="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-				<a className="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-			</div>
-	</div>
-			
 
+				  }
+					return(
+						<div key={project.id} className="item img-responsive">
+							<img src={project.url} alt="" />
+						</div> 
+					)
+				})}
+		</div>
+		<a className="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		<a className="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	</div>
 		)
 
 	}
