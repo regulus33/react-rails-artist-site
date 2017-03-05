@@ -26,17 +26,27 @@
 	element to 80px below the top edge of its nearest positioned ancestor:*/
 .carousel-control {
 	top: 25%;
+	bottom: 75%;
 }
 .carousel-inner {
 	width: 436px;
 	height: 879px;
 }
-.carousel-control.left, .carousel-control.right {
+.carousel-control.left, .carousel-control.right{
+	font-family: georgia;
 	background: none;
 	border: none;
-	font-size: 100px;
+	font-size: 60px;
 
 }
-.carousel-control.left {margin-left: -45px; color: black;}
+.carousel-control.left {
+	margin-left: -45px; 
+	color: black;
 
-.carousel-control.right {margin-right: -45px; color: black;}
+
+}
+
+.carousel-control.right {
+	margin-right: -45px; 
+	color: black;
+}
