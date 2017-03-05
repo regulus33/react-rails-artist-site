@@ -16,14 +16,18 @@ var AllProjects = React.createClass({
 				  if(project.id === 1){
 				  	return(
 						<div key={project.id} className="active item img-responsive">
+						  <a href={project.url} target="_blank">
 							<img src={project.url} alt="" />
+						  </a>
 						</div> 
 					)
 
 				  }
 					return(
 						<div key={project.id} className="item img-responsive">
+						  <a href={project.url} target="_blank">
 							<img src={project.url} alt="" />
+						  </a>
 						</div> 
 					)
 				})}
