@@ -13,7 +13,7 @@ var AllProjects = React.createClass({
 
 	render(){
 		return( 
-	<div id="myCarousel" className="carousel slide"> 
+	<div id="myCarousel" className="carousel slide text-center"> 
 		<div className="carousel-inner">
 				{this.state.projects.map(function(project){
 				  if(project.id === 1){

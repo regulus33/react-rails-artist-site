@@ -25,16 +25,17 @@
 	/*Set the top edge of the absolute positioned  
 	element to 80px below the top edge of its nearest positioned ancestor:*/
 .carousel-control {
-	top: 50%;
+	top: 25%;
 }
 .carousel-inner {
-/*	width: 86px;
-	height: 520px;*/
+	width: 436px;
+	height: 879px;
 }
 .carousel-control.left, .carousel-control.right {
 	background: none;
-	color: red;
 	border: none;
+	font-size: 100px;
+
 }
 .carousel-control.left {margin-left: -45px; color: black;}
 
