@@ -13,17 +13,26 @@ var AllProjects = React.createClass({
 
 	render(){
 		return( 
-		  <div className="col-md-6 tex-center">
-		    <div className="slider">
-		      <ul>
-				 {this.state.projects.map(function(project){
-		            return <li className="" key={project.id}><img className="img-responsive" src={project.url}/></li>;
+	<div id="myCarousel" className="carousel slide"> 
+				<div className="carousel-inner">
+					<div className="active item">
+						<img src="https://pixabay.com/static/uploads/photo/2015/10/01/21/39/background-image-967820_960_720.jpg" />
+					</div> 
+
+				  {this.state.projects.map(function(project){
+		            return(
+		            	<div key={project.id} className="item">
+							<img src={project.url} alt="" />
+						</div> 
+					)
 		          })}
-				</ul>
-				  <button className="prev"><p>&#60;</p></button>
-  				  <button className="next"><p>&#62;</p></button>
+				
+				<a className="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a className="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 			</div>
-		  </div>
+	</div>
+			
+
 		)
 
 	}
