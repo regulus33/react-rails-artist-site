@@ -53,4 +53,4 @@ url_array = [
 "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/983948_10201354289327646_1084021517_n.jpg?oh=fe04e577786f7b14e8f55b22debf771a&oe=5967A5F4"
 ]
 
-url_array.length.times {|index| Project.create!(title: "Title Of Work", description: Faker::ChuckNorris.fact, url: url_array[index]) }
+url_array.length.times {|index| Project.create!(title: "Title Of Work", description: "example", url: url_array[index]) }
