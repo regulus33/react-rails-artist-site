@@ -3,6 +3,10 @@ class Api::V1::ProjectsController < Api::V1::BaseController
     respond_with Project.all
   end
 
+  def work
+    respond_with Project.all
+  end
+
   def create
     respond_with :api, :v1, Project.create(project_params)
   end

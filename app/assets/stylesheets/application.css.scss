@@ -28,16 +28,14 @@ body { padding-top: 70px; }
 
 
 .carousel-inner{
-	width: 436px;
-	height: 879px;
+/*	width: 436px;
+	height: 879px;*/
 	width: 60%;
 	margin: 0 auto;
 }
 
 .carousel-control {
 	margin-top: 35%;
-
-
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -62,13 +60,6 @@ a.nav-item{
 	font-size: 12px;
 }
 
-
-
-a.logo img{
-	width: 15%;
-	margin: 0 auto;
-}
-
 nav.navbar.text-center{
   padding-top: 20px;
 }
@@ -77,6 +68,49 @@ p.logo{
 	font-family: 'Varela Round', sans-serif;
 	font-size: 45px; 
 }
+
+div.project{
+	width: 20%;
+	/*border: 0.1px solid black;*/ 
+
+}
+
+a.logo-link{
+	color: black;
+}
+
+img.img-responsive.img-clip{
+    width:auto;
+    height:200px;  /*this is supposed to maintain the aspect ratio*/
+    overflow:hidden;
+}
+
+div.about-text{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+p.about{
+	color: #5e5e5e;
+	font-family: Arial;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+img.img-responsive.selfy{
+	width: 50%;
+	height: 50%;
+	border-radius: 3px;
+	margin: 0 auto;
+}
+
+a.contact, p.contact{
+	color: #5e5e5e;
+	font-family: Arial;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+
 
 
 
