@@ -31,12 +31,8 @@ var AllProjects = React.createClass({
 						)
 					})}
 				</div>
-		
 					<a id="button-left" className="carousel-control left" href="#myCarousel" data-slide="prev">&#60;</a>
-			
-
 					<a className="carousel-control right" href="#myCarousel" data-slide="next">&#62;</a>
-		
 			</div>
 		)
 
