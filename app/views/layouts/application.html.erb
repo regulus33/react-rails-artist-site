@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EzeWebsite</title>
+    <title>Ezequiel Leoni</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
   </head>
 
   <body>
-    <div id="app"></div>
+    <p class="logo text-center">LEONI</p>
+    <nav class="navbar text-center">
+      <div class="container nav-container">
+        <a class="nav-item">WORK</a>
+        <a class="nav-item">ABOUT</a>
+        <a class="nav-item">CONTACT</a>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>

@@ -16,8 +16,11 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import url('https://fonts.googleapis.com/css?family=Inder|Varela+Round');
 
- /*sets the margin space required on the left and right sides of the carousel*/
+
+body { padding-top: 70px; }
+
  #myCarousel{
  	width: 45%;
  	margin: 0 auto;
@@ -50,6 +53,30 @@
 .carousel-control.right {margin-right: -75px; color: black;}
 
 
+a.nav-item{
+	padding: 55px;
+	letter-spacing: 5px;
+	text-decoration: none;	
+	color: #878787;
+	font-family: 'Inder', sans-serif;
+	font-size: 12px;
+}
+
+
+
+a.logo img{
+	width: 15%;
+	margin: 0 auto;
+}
+
+nav.navbar.text-center{
+  padding-top: 20px;
+}
+
+p.logo{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 45px; 
+}
 
 
 
