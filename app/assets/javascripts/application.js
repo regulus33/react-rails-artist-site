@@ -18,6 +18,17 @@
 //= require react_ujs
 //= require components
 //= require_tree .
+$(document).ready(function(){
+	var url = window.location.href;
+	$("a.nav-item").forEach(function(value){
+		if ( url.includes( value.text() ) ){
+			value.addClass("active");
+		}
+	}); 
+	
+})
+
+
 
 
 
