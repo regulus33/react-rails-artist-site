@@ -19,7 +19,7 @@
 //= require components
 //= require_tree .
 $(document).ready(function(){
-	var url = window.location.href;
+	var url = window.location.href; //for window nav elements
 	$("a.nav-item").forEach(function(value){
 		if ( url.includes( value.text() ) ){
 			value.addClass("active");
