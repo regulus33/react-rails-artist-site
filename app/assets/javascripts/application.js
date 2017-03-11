@@ -21,8 +21,7 @@
 $(document).ready(function(){
 	var url = window.location.href; //for window nav elements
 	$("a.nav-item").each(function(key, value){
-		debugger
-		if ( url.includes( $(value).text() ) ){
+		if (  url.includes( $(value).text().toLowerCase())  ){
 			console.log(value);
 			$(value).addClass("active");
 		}
