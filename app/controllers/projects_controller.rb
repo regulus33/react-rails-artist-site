@@ -1,7 +1,7 @@
 class Api::V1::ProjectsController < Api::V1::BaseController
   def index
     
-    respond_with Dir.entries("public/projects") 
+    respond_with Dir.entries("public/assets/projects") 
   end
 
   def work
