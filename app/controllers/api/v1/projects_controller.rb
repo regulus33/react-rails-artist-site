@@ -2,9 +2,11 @@ class Api::V1::ProjectsController < Api::V1::BaseController
   def index
     img_sources = Dir.entries("public/projects").map do |filename|  
       # "public/projects/#{filename}"
-      "projects/#{filename}"
+      if filename != '.' && filename != '..' && filename != nil && filename != '.DS_Store'
+         "projects/#{filename}"
+      end
     end
-    respond_with img_sources
+    respond_with img_sources.flatten
   end
 
   def create

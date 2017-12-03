@@ -16,7 +16,7 @@ var AllProjects = React.createClass({
 			<div id="myCarousel" className="carousel slide text-center"> 
 				<div className="carousel-inner">
 					{this.state.projects.map(function(project, index){
-						if(index === 1){
+						if(index === 8){
 							return(
 								<div key={index} className="active item img-responsive">
 								  <a href={project} target="_blank">
