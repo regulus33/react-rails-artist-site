@@ -1,6 +1,10 @@
 class Api::V1::ProjectsController < Api::V1::BaseController
   def index
-    respond_with Project.all
+    img_sources = Dir.entries("public/projects").map do |filename|  
+      # "public/projects/#{filename}"
+      "projects/#{filename}"
+    end
+    respond_with img_sources
   end
 
   def create

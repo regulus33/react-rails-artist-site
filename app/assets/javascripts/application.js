@@ -19,6 +19,7 @@
 //= require components
 //= require_tree .
 $(document).ready(function(){
+	debugger
 	var url = window.location.href; //for window nav elements
 	$("a.nav-item").each(function(key, value){
 		if (  url.includes( $(value).text().toLowerCase())  ){

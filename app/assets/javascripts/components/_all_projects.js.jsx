@@ -5,27 +5,30 @@ var AllProjects = React.createClass({
 	},
 
 	componentDidMount() {
-		$.getJSON('/api/v1/projects.json', (response) => {this.setState({ projects: response }) });
+		$.getJSON('/api/v1/projects.json', (response) => {
+			debugger
+			this.setState({ projects: response }) 
+		});
 	},
 
 	render(){
 		return( 
 			<div id="myCarousel" className="carousel slide text-center"> 
 				<div className="carousel-inner">
-					{this.state.projects.map(function(project){
-						if(project.id === 1){
+					{this.state.projects.map(function(project, index){
+						if(index === 1){
 							return(
-								<div key={project.id} className="active item img-responsive">
-								  <a href={project.url} target="_blank">
-								  	<img src={project.url} alt="" />
+								<div key={index} className="active item img-responsive">
+								  <a href={project} target="_blank">
+								  	<img src={project} alt="" />
 								  </a>
 								</div> 
 							)
 						}
 						return(
-							<div key={project.id} className="item img-responsive">
-								<a href={project.url} target="_blank">
-									<img src={project.url} alt="" />
+							<div key={index} className="item img-responsive">
+								<a href={project} target="_blank">
+									<img src={project} alt="" />
 								</a>
 							</div> 
 						)
